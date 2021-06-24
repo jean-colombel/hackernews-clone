@@ -1,5 +1,6 @@
 <html>
     <head>
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css">
       <link rel="stylesheet" href="style.css"></link>
     </head>
     <body>
@@ -11,11 +12,11 @@
                      <img class="header-logo" src="https://icon.now.sh/ycombinator/fff">
                      HackerNews
                   </span>
-                  <a href="#/" class="header-link">Top</a>
-                  <a href="#/new" class="header-link">New</a>
-                  <a href="#/ask" class="header-link">Ask</a>
-                  <a href="#/show" class="header-link">Show</a>
-                  <a href="#/favorites" class="header-link">Favorites</a>
+                  <a href="/" data-navigo class="header-link">Top</a>
+                  <a href="/new" data-navigo class="header-link">New</a>
+                  <a href="/ask" data-navigo class="header-link">Ask</a>
+                  <a href="/show" data-navigo class="header-link">Show</a>
+                  <a href="/favorites" data-navigo class="header-link">Favorites</a>
                 </div>
              </header>
           </div>
@@ -23,5 +24,11 @@
          <div id="router-outlet"></div>
        </div>
         </div>
+
+        <script type="module" src="app.js"></script>
+        <script src="//unpkg.com/navigo"></script>
+        <!-- https://npmjs.com/package/navigo -->
     </body>
 </html>
+
+<!-- news.ycombinator.com -->
